@@ -1,0 +1,35 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.section-link,
+.section-btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  margin-bottom: 26px;
+}
