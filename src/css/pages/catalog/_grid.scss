@@ -1,0 +1,19 @@
+.catalog {
+  .content-grid-wrapper {
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sidebar main";
+    gap: $gap-32;
+    margin-bottom: 32px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .main {
+    grid-area: main;
+  }
+}

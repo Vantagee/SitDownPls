@@ -1,0 +1,35 @@
+.cooperation {
+  .warranty__list {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .warranty__list-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: $gray-color;
+  }
+
+  .warranty__list-item::marker {
+    color: $orange-color;
+  }
+
+  .warranty__bottom-block {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $dark-gray;
+    max-width: 515px;
+    min-height: 72px;
+    padding-left: 109px;
+  }
+
+  .warranty__bottom-block-bg {
+    background-image: url("/images/warranty-bg.png");
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+}

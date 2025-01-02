@@ -1,0 +1,31 @@
+.cooperation {
+  .features__list-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray-color;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 40px;
+  }
+
+  .features__list {
+    flex-direction: column;
+    gap: 12px;
+    max-width: 624px;
+  }
+
+
+  .features__list-item-bg-1 {
+    background-image: url("/images/features-bg-1.svg");
+  }
+
+  .features__list-item-bg-2 {
+    background-image: url("/images/features-bg-2.svg");
+  }
+
+  .features__list-item-bg-3 {
+    background-image: url("/images/features-bg-3.svg");
+  }
+}

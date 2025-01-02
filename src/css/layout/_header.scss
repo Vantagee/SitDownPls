@@ -1,4 +1,3 @@
-@import "../base/var";
 
 .header {
   flex-direction: column;
@@ -7,7 +6,7 @@
 }
 
 .header__list-block-1 {
-  gap: 64px;
+  gap: 56px;
 }
 
 .header__block-1 {
@@ -21,13 +20,16 @@
 }
 
 .header__address {
+  margin-right: auto;
+}
+
+.header__phone-link {
+  color: $orange-color;
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  margin-right: auto;
-  color: $orange-color;
-  align-items: center;
 }
 
 .header__link-item-block-1 {
@@ -35,21 +37,23 @@
   font-size: 14px;
   line-height: 100%;
   color: $dark-gray;
+  padding: 0 8px;
 }
 
 .header__logo-link {
   margin-right: auto;
 }
 
-.header__Link-item-block-2 {
+.header__link-item-block-2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: $dark-gray;
+  padding: 0 7px;
 }
 
 .header__list-block-2 {
-  gap: 91px;
+  gap: 84px;
 }
 
 .header__nav-block-2 {
@@ -98,9 +102,79 @@
   background: $orange-color;
   align-items: center;
   justify-content: center;
-  color:$white-color;
+  color: $white-color;
   font-weight: 700;
   font-size: 10px;
   line-height: 100%;
+}
+
+.header__phone-link svg {
+  fill: $orange-color;
+}
+
+.header__phone-link:focus {
+  background-color: #FFF5D1;
+  outline: none;
+}
+
+.header__phone-link:hover {
+  color: #FFBD59;
+}
+
+.header__phone-link:hover svg {
+  fill: #FFBD59;
+}
+
+.header__phone-link:active {
+  color: #BB370E;
+  background-color: transparent;
+}
+
+.header__phone-link:active svg {
+  fill: #BB370E;
+  background-color: transparent;
+}
+
+.header__link-item-block-1:focus {
+  outline: none;
+  background-color: #EBD1FF;
+  color: $dark-purple-color;
+}
+
+.header__link-item-block-1:hover {
+  color: $purple-color;
+  background-color: transparent;
+}
+
+.header__link-item-block-1:active {
+  color: $dark-purple-color;
+  background-color: transparent;
+}
+
+.header__link-item-block-2:focus {
+  outline: none;
+  background-color: #EBD1FF;
+  color: $dark-purple-color;
+}
+
+.header__link-item-block-2:hover {
+  color: $purple-color;
+  background-color: transparent;
+}
+
+.header__link-item-block-2:active {
+  color: $dark-purple-color;
+  background-color: transparent;
+}
+
+.header__input:focus {
+  outline: none;
+  background: #F8EFFF;
+  border: 2px solid $purple-color;
+}
+
+.header__input:hover {
+  outline: none;
+  background: #EAEAEA;
 }
 

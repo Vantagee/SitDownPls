@@ -1,0 +1,7 @@
+.home {
+  .high-rating__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 296px);
+    grid-template-rows: repeat(2, 420px);
+  }
+}

@@ -1,0 +1,150 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.section-link,
+.section-btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  margin-bottom: 26px;
+}
+
+.label {
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.label-text {
+  position: relative;
+}
+
+.label-text::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: $white-color;
+  border-radius: 2px;
+  border: 1px solid $gray-color;
+}
+
+.label-text::after {
+  position: absolute;
+  content: url("/images/checkbox-arrow.svg");
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.checkbox:checked + .label-text::before {
+  background-color: $purple-color;
+  border: none;
+}
+
+.checkbox:checked + .label-text::after {
+  opacity: 1;
+}
+
+.card__grid-wrapper {
+  gap: $gap-32;
+}
+
+.card-grid-item {
+  position: relative;
+  background-color: $light-gray-color;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: end;
+}
+
+.card-img {
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.card-sub-subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: $dark-gray;
+  margin-bottom: 24px;
+}
+
+.card-link {
+  padding: 19px 35px;
+  width: 128px;
+  height: 54px;
+  border: 2px solid $purple-color;
+  font-weight: 600;
+  color: $purple-color;
+}
+
+.card-price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+.card-star-rating {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: $orange-color;
+  left: 30px;
+  top: 30px;
+}
+
+.link-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: $purple-color;
+}
+
+.link-wrapper svg {
+  width: 22px;
+  height: 22px;
+}
+
+.link-wrapper {
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}

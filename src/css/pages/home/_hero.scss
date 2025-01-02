@@ -1,0 +1,31 @@
+.home {
+  .hero__section {
+    background-image: url("/images/hero__bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: $gray-color;
+    margin-bottom: 49px;
+    max-width: 418px;
+  }
+
+  .hero__link {
+    padding: 22px 47px;
+    width: 187px;
+    height: 60px;
+    background: $purple-color;
+    color: $white-color;
+    font-weight: 700;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

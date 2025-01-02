@@ -1,0 +1,37 @@
+.home {
+  .banner__section {
+    background-image: url("/images/banner-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    align-items: center;
+  }
+
+  .banner__subtitle {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: #D5B986;
+  }
+
+  .banner__descr {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: $white-color;
+    margin-bottom: 49px;
+    max-width: 399px;
+  }
+
+  .banner__link {
+    padding: 22px 47px;
+    width: 187px;
+    height: 60px;
+    background: $purple-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: $white-color;
+  }
+}

@@ -1,9 +1,19 @@
+// переменные и миксины
+@import "./base/var";
+@import "./base/mixins";
+
+// базовые стили
 @import "./base/normalize";
 @import "./base/reset";
-@import "./base/base";
+@import "base/common";
 
+// стили для общих секций
 @import "./layout/header";
-@import "./layout/hero";
-@import "./layout/special-offers";
-@import "./layout/high-rating";
-@import "./layout/banner";
+@import "./layout/patch";
+@import "./layout/footer";
+
+// стили для страниц
+@import "pages/home/main-home";
+@import "pages/catalog/main-catalog";
+@import "pages/product/main-product";
+@import "pages/cooperation/main-cooperation";
