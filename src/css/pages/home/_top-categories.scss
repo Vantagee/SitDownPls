@@ -3,12 +3,14 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 511px 405px;
+    grid-auto-rows: 511px;
     gap: $gap-32;
   }
 
   .top-categories__grid-item {
     background-color: $light-gray-color;
     padding: 30px;
+    overflow: hidden;
   }
 
   .top-categories__grid-item-1 {
@@ -32,15 +34,20 @@
   }
 
   .top-categories__img {
-    margin: 0 0 30px -30px;
+    margin: 0 0 0 -30px;
   }
 
-  .top-categories__descr {
+  .top-categories__list-item {
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     color: $gray-color;
-    margin-bottom: 14px;
+  }
+
+  .top-categories__list {
+    gap: 30px;
+    margin-bottom: 10px;
+    width: fit-content;
   }
 
   .top-categories__sub-subtitle {

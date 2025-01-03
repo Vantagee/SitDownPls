@@ -6,7 +6,7 @@
 }
 
 .header__list-block-1 {
-  gap: 56px;
+  gap: 73px;
 }
 
 .header__block-1 {
@@ -36,7 +36,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: $dark-gray;
+  color: $gray-color;
   padding: 0 8px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .header__list-block-2 {
-  gap: 84px;
+  gap: 88px;
 }
 
 .header__nav-block-2 {
@@ -178,3 +178,9 @@
   background: #EAEAEA;
 }
 
+.header__svg-wrapper-bottom,
+.header__svg-wrapper-top {
+  display: none;
+  align-items: center;
+  gap: $gap-32;
+}

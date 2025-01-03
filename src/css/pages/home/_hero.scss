@@ -4,15 +4,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
+    align-items: center;
   }
 
   .hero__title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 55px;
     line-height: 65px;
-    color: $gray-color;
+    color: #999999;
     margin-bottom: 49px;
-    max-width: 418px;
+    max-width: 479px;
   }
 
   .hero__link {
@@ -22,10 +23,5 @@
     background: $purple-color;
     color: $white-color;
     font-weight: 700;
-  }
-
-  .hero__container {
-    flex-direction: column;
-    justify-content: center;
   }
 }

@@ -1,7 +1,49 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSansBold"), local("OpenSans-Bold"),
+  url("/fonts/OpenSans-Bold.woff2") format("woff2"),
+  url("/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSansRegular"), local("OpenSans-Regular"),
+  url("/fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSansSemiBold"), local("OpenSans-SemiBold"),
+  url("/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+  url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("PlayfairDisplayBlack"), local("PlayfairDisplay-Black"),
+  url("/fonts/PlayfairDisplay-Black.woff2") format("woff2"),
+  url("/fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .container {
-  max-width: 1280px;
+  max-width: 1310px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .flex {
@@ -13,12 +55,13 @@ p {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "OpenSans", "sans-serif";
   font-style: normal;
+  min-width: 320px;
 }
 
 .section {
-  margin-bottom: 70px;
+  margin-bottom: 66px;
 }
 
 .section-link,
@@ -32,7 +75,11 @@ body {
 
 .section-title {
   margin-bottom: 26px;
-}
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 100%;
+    color: $dark-gray;
+  }
 
 .label {
   user-select: none;
@@ -87,8 +134,11 @@ body {
   position: relative;
   background-color: $light-gray-color;
   flex-direction: column;
-  padding: 30px;
   justify-content: end;
+}
+
+.card-content-wrapper {
+  padding: 0 30px 30px 30px;
 }
 
 .card-img {
@@ -98,10 +148,11 @@ body {
 
 .card-sub-subtitle {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 130%;
-  color: $dark-gray;
+  color: #333;
   margin-bottom: 24px;
+  max-width: 216px;
 }
 
 .card-link {
@@ -136,6 +187,7 @@ body {
   font-size: 16px;
   line-height: 120%;
   color: $purple-color;
+  letter-spacing: 1px;
 }
 
 .link-wrapper svg {
@@ -148,3 +200,10 @@ body {
   gap: 5px;
   width: fit-content;
 }
+
+
+
+
+
+
+

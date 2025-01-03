@@ -7,16 +7,12 @@
   }
 
   .feedback__subtitle {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 100%;
-    color: $dark-gray;
-    margin-bottom: 9px;
+    margin-bottom: 5px;
   }
 
   .feedback__descr {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     color: #666;
     margin-bottom: 16px;
@@ -61,6 +57,7 @@
     line-height: 19px;
     color: $dark-gray;
     padding-left: 23px;
+    letter-spacing: 1.2px;
   }
 
   .feedback__link {
@@ -80,6 +77,10 @@
     background-size: 100% auto;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .feedback__section {
+    margin-bottom: 70px;
   }
 }
 

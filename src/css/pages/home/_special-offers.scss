@@ -1,7 +1,7 @@
 .home {
   .special-offers__grid-wrapper {
     display: grid;
-    grid-template-columns: 296px 624px 296px; /* Средняя колонка в 2 раза больше */
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 511px;
     gap: $gap-32;
   }
@@ -11,21 +11,15 @@
     flex-direction: column;
     position: relative;
     justify-content: end;
-    padding: 30px;
+  }
+
+  .special-offers__content-wrapper {
+    padding: 0 30px 30px 30px;
   }
 
   .special-offers__img {
     align-self: center;
     margin-bottom: 16px;
-  }
-
-  .special-offers__sub-subtitle {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 130%;
-    color: $dark-gray;
-    margin-bottom: 22px;
-    max-width: 198px;
   }
 
   .special-offers__price-wrapper {
