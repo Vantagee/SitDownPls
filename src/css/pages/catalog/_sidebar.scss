@@ -10,7 +10,7 @@
 
   .sidebar__subtitle {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 130%;
     color: $dark-gray;
     margin-bottom: 20px;
@@ -18,10 +18,19 @@
 
   .sidebar__sub-subtitle {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 130%;
     color: #666666;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+  }
+
+  .sidebar__link-wrapper {
+    margin-top: initial;
+  }
+
+  .sidebar__list {
+    gap: 10px;
+    flex-direction: column;
   }
 
   .sidebar__price-sub-subtitle {
@@ -31,7 +40,7 @@
   .sidebar__price-wrapper,
   .sidebar__label-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 130%;
     color: #666666;
   }
@@ -43,7 +52,12 @@
   }
 
   .sidebar__label-text {
-    padding-left: 20px;
+    padding-left: 32px;
+  }
+
+  .sidebar__label-text::before {
+    width: 20px;
+    height: 20px;
   }
 
   .sidebar__input {
@@ -90,5 +104,13 @@
     background-position: top;
 
     @include bg-contain()
+  }
+
+  .sidebar__pagination-wrapper {
+    justify-content: center;
+  }
+
+  .sidebar__subtitle-1024 {
+    display: none;
   }
 }

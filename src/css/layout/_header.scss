@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.header__address {
+.header__wrapper-top {
   margin-right: auto;
 }
 
@@ -44,12 +44,17 @@
   margin-right: auto;
 }
 
+.header__logo-link-top {
+  display: none;
+}
+
 .header__link-item-block-2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: $dark-gray;
   padding: 0 7px;
+  white-space: nowrap;
 }
 
 .header__list-block-2 {
@@ -58,6 +63,7 @@
 
 .header__nav-block-2 {
   align-items: center;
+  overflow: hidden;
 }
 
 .header__input {
@@ -183,4 +189,23 @@
   display: none;
   align-items: center;
   gap: $gap-32;
+}
+
+.header__address-bottom {
+  display: none;
+  margin-right: auto;
+}
+
+.header__sub-container {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__wrapper-top-block-1 {
+  margin-right: auto;
+}
+
+.header__logo-link-top {
+  display: none;
 }

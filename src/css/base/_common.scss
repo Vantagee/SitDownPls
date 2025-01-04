@@ -156,12 +156,15 @@ body {
 }
 
 .card-link {
-  padding: 19px 35px;
+  padding: 10px 17px;
   width: 128px;
   height: 54px;
   border: 2px solid $purple-color;
   font-weight: 600;
   color: $purple-color;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .card-price {
@@ -199,6 +202,7 @@ body {
   align-items: center;
   gap: 5px;
   width: fit-content;
+    margin-top: auto;
 }
 
 

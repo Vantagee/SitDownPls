@@ -25,6 +25,14 @@
     background-image: url("/images/useful-img-3.jpg");
   }
 
+  .useful__bg-4 {
+    background-image: url("/images/useful-img-4.jpg");
+  }
+
+  .useful__bg-5 {
+    background-image: url("/images/useful-img-5.jpg");
+  }
+
   .useful__content-wrapper {
     flex-grow: 1;
     flex-direction: column;
@@ -37,7 +45,9 @@
     background-color: $light-gray-color;
   }
 
-  .useful__grid-item-3 {
+  .useful__grid-item-3,
+  .useful__grid-item-4,
+  .useful__grid-item-5 {
     display: none;
   }
 

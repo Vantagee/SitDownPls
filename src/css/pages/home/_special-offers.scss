@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 511px;
+    grid-auto-rows: 511px;
     gap: $gap-32;
   }
 
@@ -21,6 +22,13 @@
     align-self: center;
     margin-bottom: 16px;
   }
+
+  .special-offers__grid-item-4,
+  .special-offers__grid-item-5,
+  .special-offers__grid-item-6 {
+    display: none;
+  }
+
 
   .special-offers__price-wrapper {
     gap: 30px;

@@ -1,8 +1,10 @@
 .catalog {
   .catalog__grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 296px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 420px);
+    grid-auto-rows: 420px;
+    margin-bottom: 32px;
   }
 
   .catalog__section {
@@ -15,5 +17,38 @@
     line-height: 130%;
     color: $dark-gray;
     margin-bottom: 24px;
+  }
+
+  .catalog__sub-subtitle {
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+  }
+
+  .catalog__pagination-btn {
+    width: 32px;
+    height: 32px;
+    border: 2px solid $purple-color;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: $purple-color;
+  }
+
+  .active-btn {
+    border: 2px solid $dark-purple-color;
+    background-color: $dark-purple-color;
+    color: $white-color;
+  }
+
+  .catalog__pagination-wrapper {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .catalog__pagination-btn-3 {
+    display: none;
   }
 }
