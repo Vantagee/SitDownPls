@@ -34,6 +34,60 @@
     }
   }
 
+  .product__card {
+    .similar-products__grid-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .similar-products__item-4 {
+      display: none;
+    }
+
+    .header {
+      margin-bottom: 19px;
+    }
+
+    .patch__section {
+      margin-bottom: 31px;
+    }
+
+    .product__left {
+      padding-top: 23px;
+    }
+
+    .product__img-1 {
+      width: initial;
+      margin-bottom: 101px;
+      height: 202px;
+    }
+
+    .product__sub-subtitle {
+      margin-bottom: 10px;
+    }
+
+    .product__grid-wrapper {
+      gap: 20px;
+      grid-template-rows: auto;
+    }
+
+    .product__descr-left {
+      margin-bottom: 85px;
+    }
+
+    .product-right__content-wrapper,
+    .product-right__content-wrapper-1024 {
+      margin-bottom: 84px;
+    }
+
+    .product__section {
+      margin-bottom: 57px;
+    }
+
+    .similar-products__section {
+      margin-bottom: 69px;
+    }
+  }
+
   .container {
     padding: 0 36px;
   }
@@ -264,7 +318,7 @@
   }
 
   .header__nav-block-2 {
-    padding-top: 28px;
+    padding-top: 10px;
   }
 
   .footer__svg-wrapper {
@@ -367,6 +421,58 @@
       display: none;
     }
   }
+
+  .product__card {
+    .product__grid-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: -25px;
+    }
+
+    .product-right__content-wrapper {
+      display: none;
+    }
+
+    .product-right__content-wrapper-1024 {
+      display: flex;
+    }
+
+    .similar-products__grid-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .similar-products__item-3 {
+      display: none;
+    }
+
+    .product__img-1 {
+      height: initial;
+      margin-bottom: 78px;
+    }
+
+    .product__left {
+      padding-top: 0;
+    }
+
+    .product__descr-part:not(:last-child) {
+      max-width: 487px;
+    }
+
+    .product__descr-left {
+      margin-bottom: 33px;
+    }
+  }
+
+  .cooperation {
+    .advantages__descr {
+      font-size: 18px;
+      line-height: 164%;
+    }
+
+    .warranty__list-item {
+      font-size: 19px;
+      line-height: 150%;
+    }
+  }
 }
 
 @media (max-width: 760px) {
@@ -442,6 +548,12 @@
 
   .footer__svg-wrapper {
     padding-right: 0;
+  }
+
+  .product__card {
+    .product__img-1 {
+      max-width: 600px;
+    }
   }
 }
 
@@ -737,6 +849,156 @@
 
     .catalog__img {
       max-height: 37px;
+    }
+  }
+
+  .product__card {
+    .product__img-1 {
+      max-width: 296px;
+      margin-bottom: 12px;
+    }
+
+    .product-right__content-wrapper-1024 {
+      margin-bottom: 31px;
+    }
+
+    .product__img-2 {
+      width: 100%;
+    }
+
+    .similar-products__grid-wrapper {
+      grid-template-rows: 278px;
+      gap: 16px;
+    }
+
+    .header__wrapper-bottom-block-1 {
+      padding: 9px 0;
+      border-bottom: 1px solid $light-gray-color;
+      border-top: 1px solid $light-gray-color;
+    }
+
+    .header {
+      gap: 14px;
+    }
+
+    .header {
+      margin-bottom: 24px;
+    }
+
+    .product__subtitle {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .product__rating-wrapper {
+      margin-bottom: 2px;
+    }
+
+    .product__price {
+      font-size: 27px;
+      margin-bottom: 14px;
+    }
+
+    .product__descr-right {
+      margin-bottom: 14px;
+      max-width: 202px;
+    }
+
+    .product__btn,
+    .product__add-btn {
+      width: 100%;
+    }
+
+    .dotted {
+      border-bottom: 3px dotted #999999;
+      width: 100%;
+      display: none;
+    }
+
+    .product__list-item {
+      flex-direction: column;
+      font-size: 11px;
+    }
+
+    .product__list {
+      gap: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product__grid-wrapper {
+      gap: 24px;
+    }
+
+    .product__item-text {
+      font-size: 15px;
+      line-height: 13px;
+    }
+
+    .similar-products__subtitle {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .product__section {
+      margin-bottom: 100px;
+    }
+  }
+
+  .cooperation {
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .header {
+      margin-bottom: 31px;
+    }
+
+    .main__title {
+      font-size: 25px;
+      margin-bottom: 27px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      margin-bottom: 5px;
+      max-width: none;
+    }
+
+    .suppliers__descr {
+      line-height: 157%;
+    }
+
+    .features__list-item {
+      line-height: 127%;
+    }
+
+    .advantages__descr {
+      font-size: 17px;
+      line-height: 147%;
+    }
+
+    .warranty__list-item {
+      font-size: 16px;
+      line-height: 163%;
+    }
+
+    .warranty__bottom-block {
+      font-size: 19px;
+      padding-left: 52px;
+      max-width: 242px;
+    }
+
+    .warranty__bottom-block-bg {
+      background-size: 36px 54px;
+    }
+
+    .warranty__list {
+      margin-bottom: -6px;
+    }
+
+    .warranty__section {
+      margin-bottom: 48px;
     }
   }
 }

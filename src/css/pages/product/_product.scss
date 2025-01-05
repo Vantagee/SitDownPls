@@ -8,7 +8,15 @@
 
   .product__img-1 {
     width: 100%;
-    margin-bottom: 113px;
+    margin-bottom: 109px;
+  }
+
+  .product__descr-part {
+    display: block;
+  }
+
+  .product__descr-part:not(:last-child) {
+    margin-bottom: 5px;
   }
 
   .product__sub-subtitle {
@@ -16,6 +24,7 @@
     font-size: 16px;
     line-height: 100%;
     color: $dark-gray;
+    margin-bottom: 10px;
   }
 
   .product__descr-left {
@@ -24,6 +33,7 @@
     line-height: 180%;
     color: $dark-gray;
     margin-bottom: 105px;
+    letter-spacing: 1px;
   }
 
   .product__rating-wrapper {
@@ -34,7 +44,7 @@
     gap: 6px;
     width: fit-content;
     align-items: center;
-    margin-bottom: 2px;
+    margin-bottom: -1px;
   }
 
   .product__star-rating {
@@ -44,9 +54,10 @@
 
   .product__subtitle {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 27px;
     line-height: 130%;
     color: $dark-gray;
+    margin-bottom: 3px;
   }
 
   .product__descr-right {
@@ -54,25 +65,27 @@
     font-size: 14px;
     line-height: 100%;
     color: $gray-color;
+    letter-spacing: 1px;
     margin-bottom: 21px;
   }
 
   .product__price {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 130%;
     color: $dark-gray;
-    margin-bottom: 21px;
+    margin-bottom: 16px;
   }
 
   .product__btn {
-    padding: 19px 35px;
+    padding: 19px 33px;
     width: 230px;
     height: 54px;
     background: $purple-color;
     font-weight: 600;
     color: $white-color;
     margin-bottom: 12px;
+    letter-spacing: 1px;
   }
 
   .product__right {
@@ -83,10 +96,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-    color: $purple-color;
-    width: 170px;
+    color: #A65CF0;
+    width: 228px;
     height: 21px;
-    margin-bottom: 111px;
+    letter-spacing: 1px;
   }
 
   .product__item-text {
@@ -95,7 +108,7 @@
 
   .dotted {
     border-bottom: 3px dotted $gray-color;
-    width: 54%;
+    width: 100%;
   }
 
   .product__list-item {
@@ -103,6 +116,20 @@
     font-size: 14px;
     line-height: 180%;
     color: $gray-color;
-    height: 25px;
+    white-space: nowrap;
+  }
+
+  .product__list {
+    max-width: 507px;
+  }
+
+  .product-right__content-wrapper-1024 {
+    display: none;
+  }
+
+  .product-right__content-wrapper-1024,
+  .product-right__content-wrapper {
+    flex-direction: column;
+    margin-bottom: 111px;
   }
 }

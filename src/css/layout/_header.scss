@@ -118,72 +118,6 @@
   fill: $orange-color;
 }
 
-.header__phone-link:focus {
-  background-color: #FFF5D1;
-  outline: none;
-}
-
-.header__phone-link:hover {
-  color: #FFBD59;
-}
-
-.header__phone-link:hover svg {
-  fill: #FFBD59;
-}
-
-.header__phone-link:active {
-  color: #BB370E;
-  background-color: transparent;
-}
-
-.header__phone-link:active svg {
-  fill: #BB370E;
-  background-color: transparent;
-}
-
-.header__link-item-block-1:focus {
-  outline: none;
-  background-color: #EBD1FF;
-  color: $dark-purple-color;
-}
-
-.header__link-item-block-1:hover {
-  color: $purple-color;
-  background-color: transparent;
-}
-
-.header__link-item-block-1:active {
-  color: $dark-purple-color;
-  background-color: transparent;
-}
-
-.header__link-item-block-2:focus {
-  outline: none;
-  background-color: #EBD1FF;
-  color: $dark-purple-color;
-}
-
-.header__link-item-block-2:hover {
-  color: $purple-color;
-  background-color: transparent;
-}
-
-.header__link-item-block-2:active {
-  color: $dark-purple-color;
-  background-color: transparent;
-}
-
-.header__input:focus {
-  outline: none;
-  background: #F8EFFF;
-  border: 2px solid $purple-color;
-}
-
-.header__input:hover {
-  outline: none;
-  background: #EAEAEA;
-}
-
 .header__svg-wrapper-bottom,
 .header__svg-wrapper-top {
   display: none;
@@ -208,4 +142,9 @@
 
 .header__logo-link-top {
   display: none;
+}
+
+.header__svg-link {
+  fill: $purple-color;
+  padding: 2px;
 }

@@ -1,0 +1,140 @@
+.btn--state-bg:focus {
+  outline: none;
+  background-color: $light-purple-color;
+  border: 1px solid $purple-color;
+}
+
+.btn--state-bg:hover {
+  background-color: $light-purple-color;
+  border: none;
+}
+
+.btn--state-bg:active {
+  background-color: $dark-purple-color;
+}
+
+.btn--state-bg:disabled {
+  background-color: #EAEAEA;
+  color: $gray-color;
+}
+
+.btn--state-transparent:focus {
+  outline: none;
+  background-color: $light-purple-color;
+  border: 1px solid $purple-color;
+  color: $white-color;
+}
+
+.btn--state-transparent:hover {
+  background-color: $purple-color;
+  border: none;
+  color: $white-color;
+}
+
+.btn--state-transparent:active {
+  background-color: $dark-purple-color;
+  color: $white-color;
+}
+
+.header__phone-link:focus {
+  background-color: #FFF5D1;
+  outline: none;
+}
+
+.header__phone-link:hover {
+  color: #FFBD59;
+}
+
+.header__phone-link:hover svg {
+  fill: #FFBD59;
+}
+
+.header__phone-link:active {
+  color: #BB370E;
+  background-color: transparent;
+}
+
+.header__phone-link:active svg {
+  fill: #BB370E;
+  background-color: transparent;
+}
+
+.header__link-item-block-1:focus {
+  outline: none;
+  background-color: #EBD1FF;
+  color: $dark-purple-color;
+}
+
+.header__link-item-block-1:hover {
+  color: $purple-color;
+  background-color: transparent;
+}
+
+.header__link-item-block-1:active {
+  color: $dark-purple-color;
+  background-color: transparent;
+}
+
+.header__link-item-block-2:focus {
+  outline: none;
+  background-color: #EBD1FF;
+  color: $dark-purple-color;
+}
+
+.header__link-item-block-2:hover {
+  color: $purple-color;
+  background-color: transparent;
+}
+
+.header__link-item-block-2:active {
+  color: $dark-purple-color;
+  background-color: transparent;
+}
+
+.header__input:focus {
+  outline: none;
+  background: #F8EFFF;
+  border: 2px solid $purple-color;
+}
+
+.header__input:hover {
+  outline: none;
+  background: #EAEAEA;
+}
+
+.header__input:active {
+  background: $light-gray-color;
+}
+
+.header__svg-link:focus {
+  background-color: $light-purple-color;
+  fill: $white-color;
+  outline: none;
+}
+
+
+.header__svg-link:hover {
+  fill: $light-purple-color;
+  background: transparent;
+}
+
+.header__svg-link:active{
+  fill: $dark-purple-color;
+  background: transparent;
+}
+
+.link-wrapper:hover .link-text {
+text-decoration: underline 2px $purple-color;
+}
+
+.link-wrapper:hover svg circle {
+fill: $light-purple-color;
+  stroke: none;
+}
+
+.link-wrapper:hover svg path   {
+  stroke: $white-color;
+  fill: $white-color;
+}
+
+

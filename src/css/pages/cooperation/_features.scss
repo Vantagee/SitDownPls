@@ -1,18 +1,19 @@
 .cooperation {
-  .features__list-item {
+   .features__list-item {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+    font-size: 17px;
+    line-height: 146%;
     color: $gray-color;
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 25px;
-    padding-left: 40px;
+    padding-left: 36px;
+    max-width: 577px;
   }
 
   .features__list {
     flex-direction: column;
-    gap: 12px;
+    gap: 9px;
     max-width: 624px;
   }
 

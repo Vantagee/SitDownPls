@@ -649,72 +649,6 @@ body {
   fill: #FF862F;
 }
 
-.header__phone-link:focus {
-  background-color: #FFF5D1;
-  outline: none;
-}
-
-.header__phone-link:hover {
-  color: #FFBD59;
-}
-
-.header__phone-link:hover svg {
-  fill: #FFBD59;
-}
-
-.header__phone-link:active {
-  color: #BB370E;
-  background-color: transparent;
-}
-
-.header__phone-link:active svg {
-  fill: #BB370E;
-  background-color: transparent;
-}
-
-.header__link-item-block-1:focus {
-  outline: none;
-  background-color: #EBD1FF;
-  color: #7033AC;
-}
-
-.header__link-item-block-1:hover {
-  color: #A65CF0;
-  background-color: transparent;
-}
-
-.header__link-item-block-1:active {
-  color: #7033AC;
-  background-color: transparent;
-}
-
-.header__link-item-block-2:focus {
-  outline: none;
-  background-color: #EBD1FF;
-  color: #7033AC;
-}
-
-.header__link-item-block-2:hover {
-  color: #A65CF0;
-  background-color: transparent;
-}
-
-.header__link-item-block-2:active {
-  color: #7033AC;
-  background-color: transparent;
-}
-
-.header__input:focus {
-  outline: none;
-  background: #F8EFFF;
-  border: 2px solid #A65CF0;
-}
-
-.header__input:hover {
-  outline: none;
-  background: #EAEAEA;
-}
-
 .header__svg-wrapper-bottom,
 .header__svg-wrapper-top {
   display: none;
@@ -739,6 +673,11 @@ body {
 
 .header__logo-link-top {
   display: none;
+}
+
+.header__svg-link {
+  fill: #A65CF0;
+  padding: 2px;
 }
 
 .patch__list-item-link {
@@ -1088,6 +1027,10 @@ body {
   height: 22px;
   display: none;
 }
+.home .link-wrapper svg {
+  stroke: #A65CF0;
+  fill: transparent;
+}
 
 .home .useful__grid-wrapper {
   display: grid;
@@ -1318,13 +1261,20 @@ body {
 }
 .product__card .product__img-1 {
   width: 100%;
-  margin-bottom: 113px;
+  margin-bottom: 109px;
+}
+.product__card .product__descr-part {
+  display: block;
+}
+.product__card .product__descr-part:not(:last-child) {
+  margin-bottom: 5px;
 }
 .product__card .product__sub-subtitle {
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
   color: #333;
+  margin-bottom: 10px;
 }
 .product__card .product__descr-left {
   font-weight: 400;
@@ -1332,6 +1282,7 @@ body {
   line-height: 180%;
   color: #333;
   margin-bottom: 105px;
+  letter-spacing: 1px;
 }
 .product__card .product__rating-wrapper {
   font-weight: 400;
@@ -1341,7 +1292,7 @@ body {
   gap: 6px;
   width: fit-content;
   align-items: center;
-  margin-bottom: 2px;
+  margin-bottom: -1px;
 }
 .product__card .product__star-rating {
   width: 16px;
@@ -1349,32 +1300,35 @@ body {
 }
 .product__card .product__subtitle {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 130%;
   color: #333;
+  margin-bottom: 3px;
 }
 .product__card .product__descr-right {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
   color: #999999;
+  letter-spacing: 1px;
   margin-bottom: 21px;
 }
 .product__card .product__price {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 130%;
   color: #333;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 .product__card .product__btn {
-  padding: 19px 35px;
+  padding: 19px 33px;
   width: 230px;
   height: 54px;
   background: #A65CF0;
   font-weight: 600;
   color: #FFF;
   margin-bottom: 12px;
+  letter-spacing: 1px;
 }
 .product__card .product__right {
   flex-direction: column;
@@ -1384,51 +1338,72 @@ body {
   font-size: 16px;
   line-height: 130%;
   color: #A65CF0;
-  width: 170px;
+  width: 228px;
   height: 21px;
-  margin-bottom: 111px;
+  letter-spacing: 1px;
 }
 .product__card .product__item-text {
   color: #333;
 }
 .product__card .dotted {
   border-bottom: 3px dotted #999999;
-  width: 54%;
+  width: 100%;
 }
 .product__card .product__list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 180%;
   color: #999999;
-  height: 25px;
+  white-space: nowrap;
+}
+.product__card .product__list {
+  max-width: 507px;
+}
+.product__card .product-right__content-wrapper-1024 {
+  display: none;
+}
+.product__card .product-right__content-wrapper-1024,
+.product__card .product-right__content-wrapper {
+  flex-direction: column;
+  margin-bottom: 111px;
 }
 
 .product__card .similar-products__grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 296px);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 420px;
 }
 .product__card .similar-products__subtitle {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 130%;
   color: #333;
   margin-bottom: 24px;
 }
 
+.product__card .header {
+  margin-bottom: 14px;
+}
+
+.product__card .patch__section {
+  margin-bottom: 46px;
+}
+
 .cooperation .section-title {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 33px;
   color: #333;
   margin-bottom: 12px;
+  letter-spacing: 1.3px;
 }
 .cooperation .main__title {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 100%;
   color: #333;
   margin-bottom: 32px;
+  letter-spacing: 1.3px;
 }
 .cooperation .section {
   margin-bottom: 32px;
@@ -1439,21 +1414,23 @@ body {
   font-size: 16px;
   line-height: 180%;
   color: #999999;
+  max-width: 723px;
 }
 
 .cooperation .features__list-item {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 17px;
+  line-height: 146%;
   color: #999999;
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 25px;
-  padding-left: 40px;
+  padding-left: 36px;
+  max-width: 577px;
 }
 .cooperation .features__list {
   flex-direction: column;
-  gap: 12px;
+  gap: 9px;
   max-width: 624px;
 }
 .cooperation .features__list-item-bg-1 {
@@ -1478,40 +1455,191 @@ body {
   font-size: 16px;
   line-height: 180%;
   color: #999999;
+  max-width: 776px;
 }
 .cooperation .advantages__list {
   flex-direction: column;
   gap: 12px;
 }
 
-.cooperation .warranty__list {
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 32px;
-}
 .cooperation .warranty__list-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
   color: #999999;
+  max-width: 692px;
+  padding-left: 9px;
 }
 .cooperation .warranty__list-item::marker {
   color: #FF862F;
 }
+.cooperation .warranty__list {
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+  padding-left: 17px;
+}
 .cooperation .warranty__bottom-block {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
+  font-size: 28px;
+  line-height: 132%;
   color: #333;
-  max-width: 515px;
-  min-height: 72px;
+  max-width: 615px;
+  min-height: 118px;
   padding-left: 109px;
+  display: flex;
+  align-items: center;
 }
 .cooperation .warranty__bottom-block-bg {
   background-image: url("/images/warranty-bg.png");
-  background-size: contain;
+  background-size: 77px 116px;
   background-position: center left;
   background-repeat: no-repeat;
+}
+.cooperation .warranty__section {
+  margin-bottom: 66px;
+}
+
+.cooperation .header {
+  margin-bottom: 16px;
+}
+
+.btn--state-bg:focus {
+  outline: none;
+  background-color: #C998FB;
+  border: 1px solid #A65CF0;
+}
+
+.btn--state-bg:hover {
+  background-color: #C998FB;
+  border: none;
+}
+
+.btn--state-bg:active {
+  background-color: #7033AC;
+}
+
+.btn--state-bg:disabled {
+  background-color: #EAEAEA;
+  color: #999999;
+}
+
+.btn--state-transparent:focus {
+  outline: none;
+  background-color: #C998FB;
+  border: 1px solid #A65CF0;
+  color: #FFF;
+}
+
+.btn--state-transparent:hover {
+  background-color: #A65CF0;
+  border: none;
+  color: #FFF;
+}
+
+.btn--state-transparent:active {
+  background-color: #7033AC;
+  color: #FFF;
+}
+
+.header__phone-link:focus {
+  background-color: #FFF5D1;
+  outline: none;
+}
+
+.header__phone-link:hover {
+  color: #FFBD59;
+}
+
+.header__phone-link:hover svg {
+  fill: #FFBD59;
+}
+
+.header__phone-link:active {
+  color: #BB370E;
+  background-color: transparent;
+}
+
+.header__phone-link:active svg {
+  fill: #BB370E;
+  background-color: transparent;
+}
+
+.header__link-item-block-1:focus {
+  outline: none;
+  background-color: #EBD1FF;
+  color: #7033AC;
+}
+
+.header__link-item-block-1:hover {
+  color: #A65CF0;
+  background-color: transparent;
+}
+
+.header__link-item-block-1:active {
+  color: #7033AC;
+  background-color: transparent;
+}
+
+.header__link-item-block-2:focus {
+  outline: none;
+  background-color: #EBD1FF;
+  color: #7033AC;
+}
+
+.header__link-item-block-2:hover {
+  color: #A65CF0;
+  background-color: transparent;
+}
+
+.header__link-item-block-2:active {
+  color: #7033AC;
+  background-color: transparent;
+}
+
+.header__input:focus {
+  outline: none;
+  background: #F8EFFF;
+  border: 2px solid #A65CF0;
+}
+
+.header__input:hover {
+  outline: none;
+  background: #EAEAEA;
+}
+
+.header__input:active {
+  background: #F6F6F6;
+}
+
+.header__svg-link:focus {
+  background-color: #C998FB;
+  fill: #FFF;
+  outline: none;
+}
+
+.header__svg-link:hover {
+  fill: #C998FB;
+  background: transparent;
+}
+
+.header__svg-link:active {
+  fill: #7033AC;
+  background: transparent;
+}
+
+.link-wrapper:hover .link-text {
+  text-decoration: underline 2px #A65CF0;
+}
+
+.link-wrapper:hover svg circle {
+  fill: #C998FB;
+  stroke: none;
+}
+
+.link-wrapper:hover svg path {
+  stroke: #FFF;
+  fill: #FFF;
 }
 
 @media (max-width: 1366px) {
@@ -1539,6 +1667,46 @@ body {
   }
   .catalog .sidebar__block-wrapper {
     gap: 74px;
+  }
+  .product__card .similar-products__grid-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product__card .similar-products__item-4 {
+    display: none;
+  }
+  .product__card .header {
+    margin-bottom: 19px;
+  }
+  .product__card .patch__section {
+    margin-bottom: 31px;
+  }
+  .product__card .product__left {
+    padding-top: 23px;
+  }
+  .product__card .product__img-1 {
+    width: initial;
+    margin-bottom: 101px;
+    height: 202px;
+  }
+  .product__card .product__sub-subtitle {
+    margin-bottom: 10px;
+  }
+  .product__card .product__grid-wrapper {
+    gap: 20px;
+    grid-template-rows: auto;
+  }
+  .product__card .product__descr-left {
+    margin-bottom: 85px;
+  }
+  .product__card .product-right__content-wrapper,
+  .product__card .product-right__content-wrapper-1024 {
+    margin-bottom: 84px;
+  }
+  .product__card .product__section {
+    margin-bottom: 57px;
+  }
+  .product__card .similar-products__section {
+    margin-bottom: 69px;
   }
   .container {
     padding: 0 36px;
@@ -1717,7 +1885,7 @@ body {
     gap: 21px;
   }
   .header__nav-block-2 {
-    padding-top: 28px;
+    padding-top: 10px;
   }
   .footer__svg-wrapper {
     padding-right: 50px;
@@ -1793,6 +1961,43 @@ body {
   .catalog .catalog__grid-item-8 {
     display: none;
   }
+  .product__card .product__grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: -25px;
+  }
+  .product__card .product-right__content-wrapper {
+    display: none;
+  }
+  .product__card .product-right__content-wrapper-1024 {
+    display: flex;
+  }
+  .product__card .similar-products__grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product__card .similar-products__item-3 {
+    display: none;
+  }
+  .product__card .product__img-1 {
+    height: initial;
+    margin-bottom: 78px;
+  }
+  .product__card .product__left {
+    padding-top: 0;
+  }
+  .product__card .product__descr-part:not(:last-child) {
+    max-width: 487px;
+  }
+  .product__card .product__descr-left {
+    margin-bottom: 33px;
+  }
+  .cooperation .advantages__descr {
+    font-size: 18px;
+    line-height: 164%;
+  }
+  .cooperation .warranty__list-item {
+    font-size: 19px;
+    line-height: 150%;
+  }
 }
 @media (max-width: 760px) {
   .container {
@@ -1851,6 +2056,9 @@ body {
   }
   .footer__svg-wrapper {
     padding-right: 0;
+  }
+  .product__card .product__img-1 {
+    max-width: 600px;
   }
 }
 @media (max-width: 620px) {
@@ -2082,6 +2290,121 @@ body {
   }
   .catalog .catalog__img {
     max-height: 37px;
+  }
+  .product__card .product__img-1 {
+    max-width: 296px;
+    margin-bottom: 12px;
+  }
+  .product__card .product-right__content-wrapper-1024 {
+    margin-bottom: 31px;
+  }
+  .product__card .product__img-2 {
+    width: 100%;
+  }
+  .product__card .similar-products__grid-wrapper {
+    grid-template-rows: 278px;
+    gap: 16px;
+  }
+  .product__card .header__wrapper-bottom-block-1 {
+    padding: 9px 0;
+    border-bottom: 1px solid #F6F6F6;
+    border-top: 1px solid #F6F6F6;
+  }
+  .product__card .header {
+    gap: 14px;
+  }
+  .product__card .header {
+    margin-bottom: 24px;
+  }
+  .product__card .product__subtitle {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .product__card .product__rating-wrapper {
+    margin-bottom: 2px;
+  }
+  .product__card .product__price {
+    font-size: 27px;
+    margin-bottom: 14px;
+  }
+  .product__card .product__descr-right {
+    margin-bottom: 14px;
+    max-width: 202px;
+  }
+  .product__card .product__btn,
+  .product__card .product__add-btn {
+    width: 100%;
+  }
+  .product__card .dotted {
+    border-bottom: 3px dotted #999999;
+    width: 100%;
+    display: none;
+  }
+  .product__card .product__list-item {
+    flex-direction: column;
+    font-size: 11px;
+  }
+  .product__card .product__list {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .product__card .product__grid-wrapper {
+    gap: 24px;
+  }
+  .product__card .product__item-text {
+    font-size: 15px;
+    line-height: 13px;
+  }
+  .product__card .similar-products__subtitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .product__card .product__section {
+    margin-bottom: 100px;
+  }
+  .cooperation .section {
+    margin-bottom: 25px;
+  }
+  .cooperation .header {
+    margin-bottom: 31px;
+  }
+  .cooperation .main__title {
+    font-size: 25px;
+    margin-bottom: 27px;
+  }
+  .cooperation .section-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    max-width: none;
+  }
+  .cooperation .suppliers__descr {
+    line-height: 157%;
+  }
+  .cooperation .features__list-item {
+    line-height: 127%;
+  }
+  .cooperation .advantages__descr {
+    font-size: 17px;
+    line-height: 147%;
+  }
+  .cooperation .warranty__list-item {
+    font-size: 16px;
+    line-height: 163%;
+  }
+  .cooperation .warranty__bottom-block {
+    font-size: 19px;
+    padding-left: 52px;
+    max-width: 242px;
+  }
+  .cooperation .warranty__bottom-block-bg {
+    background-size: 36px 54px;
+  }
+  .cooperation .warranty__list {
+    margin-bottom: -6px;
+  }
+  .cooperation .warranty__section {
+    margin-bottom: 48px;
   }
 }
 

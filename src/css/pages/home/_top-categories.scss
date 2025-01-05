@@ -70,5 +70,10 @@
     height: 22px;
     display: none;
   }
+
+  .link-wrapper svg {
+    stroke: $purple-color;
+    fill: transparent;
+  }
 }
 
