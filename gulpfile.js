@@ -34,7 +34,7 @@ const stylesDev = () => {
 
 // Задача для оптимизации шрифтов
 const fonts = () => {
-    return src("src/fonts/**/*")
+    return src("src/fonts/**/*", {encoding: false})
         .pipe(dest("dist/fonts"));
 };
 

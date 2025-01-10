@@ -37,6 +37,10 @@
   width: fit-content;
 }
 
+.footer__svg-wrapper svg {
+  fill: $gray-color;
+}
+
 .footer__sub-subtitle {
   font-weight: 400;
   font-size: 16px;
@@ -49,6 +53,8 @@
   font-size: 14px;
   line-height: 100%;
   color: $gray-color;
+  width: fit-content;
+  padding: 2px;
 }
 
 .footer__descr {
@@ -56,4 +62,8 @@
   font-size: 14px;
   line-height: 19px;
   color: $gray-color;
+}
+
+.footer__svg-wrapper .footer__svg-link svg {
+  padding: 2px;
 }

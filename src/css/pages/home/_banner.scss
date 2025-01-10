@@ -6,6 +6,8 @@
     min-height: 600px;
     align-items: center;
     background-position: center;
+    background-clip: content-box;
+    box-sizing: content-box;
   }
 
   .banner__subtitle {

@@ -5,9 +5,11 @@
     background-size: cover;
     min-height: 400px;
     align-items: center;
+    background-clip: content-box;
+    box-sizing: content-box;
   }
 
-  .hero__title {
+  .hero__descr {
     font-weight: 700;
     font-size: 55px;
     line-height: 65px;
@@ -23,5 +25,8 @@
     background: $purple-color;
     color: $white-color;
     font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 }

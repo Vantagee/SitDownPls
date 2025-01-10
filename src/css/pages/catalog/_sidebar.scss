@@ -60,6 +60,10 @@
     height: 20px;
   }
 
+  .sidebar__label-text::after {
+    left: 5px;
+  }
+
   .sidebar__input {
     width: 86px;
     height: 30px;

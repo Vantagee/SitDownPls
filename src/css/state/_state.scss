@@ -1,15 +1,15 @@
-.btn--state-bg:focus {
+.btn--state-bg:focus-visible {
   outline: none;
   background-color: $light-purple-color;
   border: 1px solid $purple-color;
 }
 
-.btn--state-bg:hover {
+.btn--state-bg:hover:not(:focus-visible) {
   background-color: $light-purple-color;
   border: none;
 }
 
-.btn--state-bg:active {
+.btn--state-bg:active:not(:focus-visible) {
   background-color: $dark-purple-color;
 }
 
@@ -18,123 +18,254 @@
   color: $gray-color;
 }
 
-.btn--state-transparent:focus {
+.btn--state-transparent:focus-visible {
   outline: none;
   background-color: $light-purple-color;
   border: 1px solid $purple-color;
   color: $white-color;
 }
 
-.btn--state-transparent:hover {
+.btn--state-transparent:hover:not(:focus-visible) {
   background-color: $purple-color;
   border: none;
   color: $white-color;
 }
 
-.btn--state-transparent:active {
+.btn--state-transparent:active:not(:focus-visible) {
   background-color: $dark-purple-color;
   color: $white-color;
 }
 
-.header__phone-link:focus {
+.header__phone-link:focus-visible {
   background-color: #FFF5D1;
   outline: none;
 }
 
-.header__phone-link:hover {
+.header__phone-link:hover:not(:focus-visible) {
   color: #FFBD59;
 }
 
-.header__phone-link:hover svg {
+.header__phone-link:hover:not(:focus-visible) svg {
   fill: #FFBD59;
 }
 
-.header__phone-link:active {
+.header__phone-link:active:not(:focus-visible) {
   color: #BB370E;
   background-color: transparent;
 }
 
-.header__phone-link:active svg {
+.header__phone-link:active:not(:focus-visible) svg {
   fill: #BB370E;
   background-color: transparent;
 }
 
-.header__link-item-block-1:focus {
+.header__link-item-block-1:focus-visible {
   outline: none;
   background-color: #EBD1FF;
   color: $dark-purple-color;
 }
 
-.header__link-item-block-1:hover {
+.header__link-item-block-1:hover:not(:focus-visible) {
   color: $purple-color;
   background-color: transparent;
 }
 
-.header__link-item-block-1:active {
+.header__link-item-block-1:active:not(:focus-visible) {
   color: $dark-purple-color;
   background-color: transparent;
 }
 
-.header__link-item-block-2:focus {
+.header__link-item-block-2:focus-visible {
   outline: none;
   background-color: #EBD1FF;
-  color: $dark-purple-color;
 }
 
-.header__link-item-block-2:hover {
+.header__link-item-block-2:hover:not(:focus-visible) {
   color: $purple-color;
   background-color: transparent;
 }
 
-.header__link-item-block-2:active {
+.header__link-item-block-2:active:not(:focus-visible) {
   color: $dark-purple-color;
   background-color: transparent;
 }
 
-.header__input:focus {
+.header__input:focus-visible {
   outline: none;
   background: #F8EFFF;
   border: 2px solid $purple-color;
 }
 
-.header__input:hover {
+.header__input:hover:not(:focus-visible) {
   outline: none;
   background: #EAEAEA;
+  border: none;
 }
 
-.header__input:active {
+.header__input:active:not(:focus-visible) {
   background: $light-gray-color;
 }
 
-.header__svg-link:focus {
+.header__input:active:not(:focus-visible) + .header__search-img {
+  fill: $purple-color;
+}
+
+.header__svg-link:focus-visible {
   background-color: $light-purple-color;
   fill: $white-color;
   outline: none;
 }
 
 
-.header__svg-link:hover {
+.header__svg-link:hover:not(:focus-visible) {
   fill: $light-purple-color;
   background: transparent;
 }
 
-.header__svg-link:active{
+.header__svg-link:active:not(:focus-visible) {
   fill: $dark-purple-color;
   background: transparent;
 }
 
-.link-wrapper:hover .link-text {
-text-decoration: underline 2px $purple-color;
+.link-wrapper:focus-visible .link-text {
+  text-decoration: underline 2px $purple-color;
 }
 
-.link-wrapper:hover svg circle {
-fill: $light-purple-color;
-  stroke: none;
+.link-wrapper:focus-visible svg circle {
+  fill: $light-purple-color;
 }
 
-.link-wrapper:hover svg path   {
+.link-wrapper:focus-visible svg path {
   stroke: $white-color;
+}
+
+.link-wrapper:focus-visible {
+  outline: none;
+}
+
+.link-wrapper:hover:not(:focus-visible) svg circle {
+  fill: $purple-color;
+}
+
+.link-wrapper:hover:not(:focus-visible) svg path {
+  stroke: $white-color;
+}
+
+.link-wrapper:hover:not(:focus-visible) .link-text {
+  text-decoration: underline 2px $purple-color;
+}
+
+.link-wrapper:active:not(:focus-visible) svg circle {
+  fill: $dark-purple-color;
+  stroke: $dark-purple-color;
+}
+
+.link-wrapper:active:not(:focus-visible) svg path {
+  stroke: $white-color;
+}
+
+.link-wrapper:active:not(:focus-visible) .link-text {
+  text-decoration: underline 2px $dark-purple-color;
+  color: $dark-purple-color;
+}
+
+.feedback__input:focus-visible {
+  background-color: #F8EFFF;
+  border: 1px solid $purple-color;
+  outline: none;
+}
+
+.feedback__input:hover:not(:focus-visible) {
+  background-color: #EAEAEA;
+  border: none;
+}
+
+.feedback__input:active:not(:focus-visible) {
+  background-color: $light-gray-color;
+  border: 1px solid #B8EC64;
+}
+
+.footer__svg-wrapper .footer__svg-link:focus-visible svg {
+  background-color: $light-purple-color;
   fill: $white-color;
 }
+
+.footer__svg-wrapper .footer__svg-link:focus-visible {
+  outline: none;
+}
+
+.footer__svg-wrapper .footer__svg-link:hover:not(:focus-visible) svg {
+  fill: $purple-color;
+  background-color: transparent;
+}
+
+.footer__svg-wrapper .footer__svg-link:active:not(:focus-visible) svg {
+  fill: $dark-purple-color;
+}
+
+.footer__item-link:focus-visible {
+  outline: none;
+  background-color: #EBD1FF;
+  color: $dark-purple-color;
+}
+
+.footer__item-link:hover:not(:focus-visible) {
+  color: $purple-color;
+  background-color: transparent;
+}
+
+.footer__item-link:active:not(:focus-visible) {
+  color: $dark-purple-color;
+  background-color: transparent;
+}
+
+.top-categories__link-wrapper-320:focus-visible {
+  outline: none;
+}
+
+.top-categories__link-wrapper-320:focus-visible svg {
+  fill: $light-purple-color;
+}
+
+.top-categories__link-wrapper-320:focus-visible svg path {
+  stroke: $white-color;
+}
+
+.top-categories__link-wrapper-320:hover:not(:focus-visible) svg {
+  fill: $purple-color;
+}
+
+.top-categories__link-wrapper-320:hover:not(:focus-visible) svg path {
+  stroke: $white-color;
+}
+
+.top-categories__link-wrapper-320:active:not(:focus-visible) svg {
+  fill: $dark-purple-color;
+  stroke: $dark-purple-color;
+}
+
+.top-categories__link-wrapper-320:active:not(:focus-visible) svg path {
+  stroke: $white-color;
+}
+
+.sidebar__input:focus-visible {
+  outline: none;
+  border-color: $purple-color;
+  background-color: #EBD1FF;
+}
+
+.sidebar__input:hover:not(:focus-visible) {
+  border-color: $purple-color;
+  background-color: $white-color;
+}
+
+.sidebar__input:active:not(:focus-visible) {
+  border-color: $dark-purple-color;
+  background-color: $white-color;
+}
+
+
+
+
 
 

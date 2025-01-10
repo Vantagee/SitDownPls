@@ -34,6 +34,10 @@
     grid-column: span 2;
   }
 
+  .top-categories__grid-item-5 .top-categories__img {
+    max-width: 258px;
+  }
+
   .top-categories__img {
     margin: 0 0 0 -30px;
   }
@@ -66,14 +70,16 @@
   }
 
   .top-categories__link-wrapper-320 svg {
+    stroke: $purple-color;
+    fill: transparent;
     width: 22px;
     height: 22px;
     display: none;
   }
 
-  .link-wrapper svg {
-    stroke: $purple-color;
-    fill: transparent;
+  .top-categories__link-wrapper-disabled-320 svg {
+    stroke: $gray-color;
   }
 }
+
 

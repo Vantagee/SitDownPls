@@ -2,7 +2,7 @@
 .header {
   flex-direction: column;
   gap: $gap-32;
-  margin-bottom: $gap-32;
+  padding-bottom: $gap-32;
 }
 
 .header__list-block-1 {
@@ -59,6 +59,7 @@
 
 .header__list-block-2 {
   gap: 88px;
+  overflow: scroll;
 }
 
 .header__nav-block-2 {
@@ -83,17 +84,22 @@
   transform: translateY(-50%);
 }
 
-.header__input-wrapper {
+.header__input-btn svg {
+  stroke: $purple-color;
+  fill: transparent;
+}
+
+.header__form {
   position: relative;
   margin-right: auto;
 }
 
-.header__input-wrapper::after {
-  content: url("/images/search.svg");
+.header__search-img {
   position: absolute;
   left: 32px;
   top: 50%;
   transform: translateY(-50%);
+  fill: $gray-color;
 }
 
 .header__svg-wrapper {
