@@ -1,21 +1,16 @@
 .home {
-  .feedback__grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 432px;
-    gap: $gap-32;
-  }
 
   .feedback__subtitle {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 
   .feedback__descr {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     color: #666;
     margin-bottom: 16px;
+    max-width: 654px;
   }
 
   .feedback__form {
@@ -29,7 +24,7 @@
   }
 
   .feedback__input {
-    width: 100%;
+    width: 624px;
     height: 54px;
     background: #F7F7F7;
     border-radius: 10px;
@@ -57,7 +52,6 @@
     line-height: 19px;
     color: $dark-gray;
     padding-left: 23px;
-    letter-spacing: 1.2px;
   }
 
   .feedback__link {
@@ -68,19 +62,14 @@
     color: $purple-color;
   }
 
-  .feedback__grid-item-2 {
-    background-image: url("/images/feedback-bg.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 383px;
-    background-position: center;
-    background-size: 100% auto;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .feedback__section {
     padding-bottom: 70px;
+  }
+
+  .feedback__bg {
+    background-image: url("/images/feedback-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 

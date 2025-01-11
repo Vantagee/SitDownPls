@@ -1,8 +1,8 @@
 .home {
-  .high-rating__grid-wrapper {
+  .high-rating__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 420px);
+    grid-template-rows: repeat(2, minmax(420px, auto));
     grid-auto-rows: 420px;
   }
 }

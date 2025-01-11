@@ -1,12 +1,13 @@
 .catalog {
-  .content-grid-wrapper {
+  .section-grid-wrapper {
     display: grid;
     grid-template-columns: 296px 1fr;
-    grid-template-rows: 1379px;
+    grid-template-rows: auto 1379px;
     grid-template-areas:
+    "path path"
     "sidebar main";
     gap: $gap-32;
-    margin-bottom: 133px;
+    padding-bottom: 133px;
   }
 
   .sidebar {
@@ -15,5 +16,9 @@
 
   .main {
     grid-area: main;
+  }
+
+  .patch__block {
+    grid-area: path;
   }
 }

@@ -1,45 +1,43 @@
 .home {
-  .top-categories__grid-wrapper {
+  .top-categories__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 511px 405px;
+    grid-template-rows: minmax(511px, auto) minmax(405px, auto);
     grid-auto-rows: 511px;
     gap: $gap-32;
   }
 
-  .top-categories__grid-item {
+  .top-categories__list-item {
     background-color: $light-gray-color;
     padding: 30px;
     overflow: hidden;
     flex-direction: column;
   }
 
-  .top-categories__grid-item-1 {
+  .top-categories__list-item-1 {
     grid-column: span 3;
   }
 
-  .top-categories__grid-item-2 {
+  .top-categories__list-item-2 {
     grid-column: span 3;
   }
 
-  .top-categories__grid-item-3 {
+  .top-categories__list-item-3 {
     grid-column: span 2;
   }
 
-  .top-categories__grid-item-4 {
+  .top-categories__list-item-4 {
     grid-column: span 2;
   }
 
-  .top-categories__grid-item-5 {
+  .top-categories__list-item-5 {
     grid-column: span 2;
-  }
-
-  .top-categories__grid-item-5 .top-categories__img {
-    max-width: 258px;
   }
 
   .top-categories__img {
     margin: 0 0 0 -30px;
+    width: 87%;
+    height: auto;
   }
 
   .top-categories__list-item {
@@ -49,7 +47,7 @@
     color: $gray-color;
   }
 
-  .top-categories__list {
+  .top-categories__tag-list {
     gap: 30px;
     margin-bottom: 10px;
     width: fit-content;

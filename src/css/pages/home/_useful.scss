@@ -1,16 +1,14 @@
 .home {
-  .useful__grid-wrapper {
+  .useful__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 676px;
+    grid-template-rows: minmax(676px, auto);
     gap: $gap-32;
   }
 
   .useful__img {
-    width: 100%;
-    min-height: 426px;
-
-    @include bg()
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   .useful__bg-1 {
@@ -37,31 +35,31 @@
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 458px 30px 30px;
   }
 
-  .useful__grid-item {
+  .useful__list-item {
     flex-direction: column;
     background-color: $light-gray-color;
   }
 
-  .useful__grid-item-3,
-  .useful__grid-item-4,
-  .useful__grid-item-5 {
+  .useful__list-item-3,
+  .useful__list-item-4,
+  .useful__list-item-5 {
     display: none;
   }
 
   .useful__descr {
     font-weight: 400;
-    font-size: 27px;
+    font-size: 24px;
     line-height: 33px;
     color: $dark-gray;
   }
 
   .useful__link {
-    padding: 19px 35px;
+    padding: 10px 20px;
     width: 128px;
-    height: 54px;
+    min-height: 54px;
     border: 2px solid $purple-color;
     font-weight: 600;
     color: $purple-color;

@@ -1,13 +1,13 @@
 .home {
-  .special-offers__grid-wrapper {
+  .special-offers__list {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 511px;
+    grid-template-rows: minmax(511px, auto);
     grid-auto-rows: 511px;
     gap: $gap-32;
   }
 
-  .special-offers__grid-item {
+  .special-offers__list-item {
     background: $light-gray-color;
     flex-direction: column;
     position: relative;
@@ -23,9 +23,9 @@
     margin-bottom: 16px;
   }
 
-  .special-offers__grid-item-4,
-  .special-offers__grid-item-5,
-  .special-offers__grid-item-6 {
+  .special-offers__list-item-4,
+  .special-offers__list-item-5,
+  .special-offers__list-item-6 {
     display: none;
   }
 
@@ -48,9 +48,9 @@
   }
 
   .special-offers__link {
-    padding: 19px 35px;
+    padding: 10px 20px;
     width: 128px;
-    height: 54px;
+    min-height: 54px;
     border: 2px solid $purple-color;
     font-weight: 600;
     color: $purple-color;
@@ -72,7 +72,7 @@
     justify-content: center;
   }
 
-  .special-offers__grid-item-2 {
+  .special-offers__list-item-2 {
     background-image: url("/images/special-offers-img-2.2.png");
     background-repeat: no-repeat;
     background-position: calc(100% - 30px) calc(100% - 30px);

@@ -19,9 +19,9 @@
   }
 
   .hero__link {
-    padding: 22px 47px;
+    padding: 22px 20px;
     width: 187px;
-    height: 60px;
+    min-height: 60px;
     background: $purple-color;
     color: $white-color;
     font-weight: 700;

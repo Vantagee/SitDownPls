@@ -30,7 +30,7 @@
   .banner__link {
     padding: 22px 47px;
     width: 187px;
-    height: 60px;
+    min-height: 60px;
     background: $purple-color;
     font-weight: 700;
     font-size: 16px;

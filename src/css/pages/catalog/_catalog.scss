@@ -1,5 +1,5 @@
 .catalog {
-  .catalog__grid-wrapper {
+  .catalog__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 420px);
@@ -7,8 +7,8 @@
     margin-bottom: 32px;
   }
 
-  .catalog__section {
-    margin-bottom: 0;
+  .catalog__block {
+    padding-bottom: 0;
   }
 
   .catalog__subtitle {

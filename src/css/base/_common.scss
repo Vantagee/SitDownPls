@@ -73,12 +73,14 @@ body {
 }
 
 .section {
-  padding-bottom: 66px;
+  padding-bottom: 69px;
 }
 
 .section-link,
 .section-btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   font-size: 16px;
   line-height: 100%;
@@ -88,7 +90,7 @@ body {
 .section-title {
   margin-bottom: 26px;
   font-weight: 400;
-  font-size: 37px;
+  font-size: 32px;
   line-height: 100%;
   color: $dark-gray;
 }
@@ -138,27 +140,27 @@ body {
   opacity: 1;
 }
 
-.card__grid-wrapper {
+.card__list {
   gap: $gap-32;
 }
 
-.card-grid-item {
+.card__list-item {
   position: relative;
   background-color: $light-gray-color;
   flex-direction: column;
   justify-content: end;
 }
 
-.card-content-wrapper {
+.card__content-wrapper {
   padding: 0 30px 30px 30px;
 }
 
-.card-img {
+.card__img {
   align-self: center;
   margin-bottom: 16px;
 }
 
-.card-sub-subtitle {
+.card__sub-subtitle {
   font-weight: 400;
   font-size: 26px;
   line-height: 130%;
@@ -167,10 +169,10 @@ body {
   max-width: 216px;
 }
 
-.card-link {
+.card__link {
   padding: 10px 17px;
   width: 128px;
-  height: 54px;
+  min-height: 54px;
   border: 2px solid $purple-color;
   font-weight: 600;
   color: $purple-color;
@@ -179,7 +181,7 @@ body {
   display: flex;
 }
 
-.card-price {
+.card__price {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -187,7 +189,7 @@ body {
   margin-bottom: 24px;
 }
 
-.card-star-rating {
+.card__star-rating {
   position: absolute;
   font-weight: 400;
   font-size: 16px;
@@ -202,7 +204,6 @@ body {
   font-size: 16px;
   line-height: 120%;
   color: $purple-color;
-  letter-spacing: 1px;
 }
 
 .link-wrapper svg {
