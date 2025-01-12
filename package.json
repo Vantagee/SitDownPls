@@ -31,6 +31,8 @@
     "gulp-uglify-es": "^3.0.0",
     "postcss": "^8.4.49",
     "sass": "^1.83.0"
+  },
+  "dependencies": {
+    "gulp-cheerio": "^1.0.0"
   }
 }
-

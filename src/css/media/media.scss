@@ -17,7 +17,7 @@
       "path"
     "sidebar"
     "main";
-      gap: 23px;
+      gap: 28px;
       padding-bottom: 71px;
     }
 
@@ -41,13 +41,17 @@
     }
 
     .sidebar__block-wrapper {
-      gap: 74px;
+      gap: 59px;
     }
   }
 
   .product__card {
     .similar-products__list {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .patch__section {
+      padding-bottom: 29px;
     }
 
     .similar-products__list-item-4 {
@@ -87,7 +91,7 @@
     }
 
     .product__section {
-      padding-bottom: 57px;
+      padding-bottom: 62px;
     }
 
     .similar-products__section {
@@ -142,7 +146,7 @@
   }
 
   .header__list-block-2 {
-    gap: 38px;
+    gap: 27px;
   }
 
   .header__input-wrapper {
@@ -151,7 +155,7 @@
   }
 
   .header__input {
-    width: 100%;
+    max-width: 733px;
   }
 }
 
@@ -243,6 +247,11 @@
       padding-bottom: 75px;
     }
   }
+  .product__card {
+    .footer__list {
+      gap: 90px;
+    }
+  }
 
   .footer__list {
     gap: 115px;
@@ -281,10 +290,15 @@
 
   .header__svg-wrapper-bottom {
     display: flex;
+    gap: 23px;
   }
 
   .header__svg-wrapper-top {
     display: none;
+  }
+
+  .section {
+    padding-bottom: 70px;
   }
 
   .footer__container-top {
@@ -302,16 +316,13 @@
     margin-right: auto;
   }
 
-  .header__wrapper-bottopm-block-1 {
-    padding: 16px 0;
-  }
-
+  .header__list-block-2,
   .header__list-block-1 {
-    gap: 34px;
+    gap: 11px;
   }
 
-  .header__list-block-2 {
-    gap: 21px;
+  .header__input {
+    max-width: 632px;
   }
 
   .header__nav-block-2 {
@@ -363,10 +374,6 @@
       grid-row: initial;
     }
 
-    .top-categories__img {
-      max-width: 450px;
-    }
-
     .useful__list-item-3 {
       display: none;
     }
@@ -414,8 +421,16 @@
       margin-bottom: -25px;
     }
 
+    .patch__section {
+      padding-bottom: 36px;
+    }
+
     .product-right__content-wrapper {
       display: none;
+    }
+
+    .footer__list {
+      gap: 0;
     }
 
     .product-right__content-wrapper-1024 {
@@ -450,13 +465,26 @@
 
   .cooperation {
     .advantages__descr {
-      font-size: 18px;
-      line-height: 164%;
+      font-size: 16px;
+      line-height: 185%;
+      max-width: 616px;
     }
 
     .warranty__list-item {
-      font-size: 19px;
-      line-height: 150%;
+      font-size: 16px;
+      line-height: 179%;
+    }
+
+    .header {
+      padding-bottom: 22px;
+    }
+
+    .section {
+      padding-bottom: 31px;
+    }
+
+    .warranty__section {
+      padding-bottom: 73px;
     }
   }
 }
@@ -464,6 +492,10 @@
 @media (max-width: 767px) {
   .container {
     padding: 0 12px;
+  }
+
+  .header__input {
+    max-width: 296px;
   }
 
   .header__nav-block-1 {
@@ -479,6 +511,7 @@
     margin: 0 auto;
     padding: 0 12px;
     max-width: 1310px;
+    align-items: center;
   }
 
   .header__address {
@@ -530,6 +563,7 @@
 
   .header__list-block-2 {
     gap: 30px;
+    overflow: scroll;
   }
 
   .footer__svg-wrapper {
@@ -542,6 +576,12 @@
     }
   }
 
+  .catalog {
+    .sidebar__block-wrapper {
+      gap: 46px;
+    }
+  }
+
   .product__card {
     .product__img-1 {
       max-width: 600px;
@@ -550,13 +590,13 @@
 }
 
 @media (max-width: 576px) {
-  .patch__block {
-    display: none;
+  .header__link-item-block-2 {
+    font-size: 14px;
   }
 
   .card__img {
     max-width: 108px;
-    max-height: 47px;
+    max-height: 38px;
     height: 100%;
   }
 
@@ -584,6 +624,7 @@
 
   .header__list-block-2 {
     gap: 13px;
+    overflow: scroll;
   }
 
   .section-title {
@@ -624,25 +665,33 @@
 
   .footer__list {
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 24px;
   }
 
   .footer__top {
-    padding: 24px 0 10px 0;
+    padding: 24px 0 21px 0;
   }
 
   .footer__list-item {
-    max-width: 50%;
-    width: 100%;
+    width: 47%;
+    gap: 6px;
+  }
+
+  .card__star-rating {
+    font-size: 13px;
+    left: 15px;
+    top: 14px;
+  }
+
+  .patch__section {
+    display: none;
+  }
+
+  .high-rating__star-img {
+    width: 13px;
   }
 
   .home {
-    .hero__descr {
-      font-size: 22px;
-      line-height: 27px;
-      margin-bottom: 157px;
-    }
-
     .special-offers__list-item-4,
     .special-offers__list-item-5,
     .special-offers__list-item-6 {
@@ -665,12 +714,22 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
-    .hero__descr {
-      font-size: 22px;
-      line-height: 27px;
-      margin-bottom: 133px;
-      padding: 30px 0 0 15px;
-      max-width: 210px;
+    .special-offers__img {
+      margin-bottom: 16px;
+    }
+
+    .special-offers__sub-subtitle {
+      font-size: 24px;
+      max-width: 228px;
+      margin-bottom: 21px;
+    }
+
+    .hero__subtitle {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 156px;
+      padding: 31px 0 0 18px;
+      max-width: 238px;
     }
 
     .hero__link {
@@ -679,6 +738,10 @@
 
     .special-offers__list-item-3 {
       display: flex;
+    }
+
+    .feedback__input {
+      width: 296px;
     }
 
     .high-rating__list {
@@ -727,8 +790,13 @@
       padding: 16px;
     }
 
+    .top-categories__link-wrapper-320 {
+      gap: 6px;
+    }
+
     .top-categories__tag-list {
-      gap: 3px;
+      margin-bottom: 2px;
+      gap: 0;
       flex-direction: column;
     }
 
@@ -746,14 +814,14 @@
       line-height: 16px;
     }
 
+    .useful__content-wrapper {
+      padding: 230px 30px 30px;
+    }
+
     .top-categories__list {
       column-gap: 16px;
       row-gap: 32px;
       grid-template-rows: minmax(332px, auto) minmax(206px, auto) minmax(206px, auto);
-    }
-
-    .top-categories__list-item-4 .top-categories__sub-subtitle {
-      max-width: 67px;
     }
 
     .top-categories__list-item-1 {
@@ -787,8 +855,9 @@
     }
 
     .feedback__label-text {
-      font-size: 10px;
+      font-size: 12px;
       display: inline-block;
+      padding-left: 20px;
     }
 
     .useful__list-item-3,
@@ -798,7 +867,7 @@
     }
 
     .feedback__section {
-      padding-bottom: 77px;
+      padding-bottom: 67px;
     }
   }
 
@@ -819,12 +888,9 @@
       grid-auto-rows: 278px;
     }
 
-    .header__wrapper-bottom-block-1 {
-      padding: 11px 0;
-    }
-
     .header {
-      gap: 14px;
+      gap: 16px;
+      padding-bottom: 24px;
     }
 
     .section-grid-wrapper {
@@ -834,12 +900,25 @@
     "main";
     }
 
+    .patch__block {
+      display: none;
+    }
+
     .catalog__sub-subtitle {
       font-size: 18px;
     }
 
     .catalog__img {
       max-height: 37px;
+    }
+
+    .catalog__list-item-4 {
+      grid-column: initial;
+      grid-row: initial;
+    }
+
+    .catalog__list-item-3 {
+      grid-column: initial;
     }
   }
 
@@ -862,20 +941,14 @@
       gap: 16px;
     }
 
-    .header__wrapper-bottom-block-1 {
-      padding: 9px 0;
-      border-bottom: 1px solid $light-gray-color;
-      border-top: 1px solid $light-gray-color;
-    }
-
     .header {
       gap: 14px;
-      padding-bottom: 24px;
+      padding-bottom: 28px;
     }
 
     .product__subtitle {
-      font-size: 18px;
-      margin-bottom: 6px;
+      font-size: 16px;
+      margin-bottom: 9px;
     }
 
     .product__rating-wrapper {
@@ -883,12 +956,12 @@
     }
 
     .product__price {
-      font-size: 27px;
-      margin-bottom: 14px;
+      font-size: 24px;
+      margin-bottom: 15px;
     }
 
     .product__descr-right {
-      margin-bottom: 14px;
+      margin-bottom: 21px;
       max-width: 202px;
     }
 
@@ -924,7 +997,7 @@
     }
 
     .similar-products__subtitle {
-      font-size: 28px;
+      font-size: 24px;
       margin-bottom: 20px;
     }
 
@@ -939,42 +1012,49 @@
     }
 
     .header {
-      padding-bottom: 31px;
+      padding-bottom: 33px;
     }
 
     .main__title {
-      font-size: 25px;
+      font-size: 24px;
       margin-bottom: 27px;
     }
 
     .section-title {
-      font-size: 14px;
-      margin-bottom: 5px;
+      font-size: 16px;
+      margin-bottom: 8px;
       max-width: none;
     }
 
     .suppliers__descr {
-      line-height: 157%;
+      line-height: 179%;
+      font-size: 14px;
+    }
+
+    .advantages__subtitle {
+      font-size: 14px;
     }
 
     .features__list-item {
-      line-height: 127%;
+      line-height: 147%;
+      font-size: 14px;
     }
 
     .advantages__descr {
-      font-size: 17px;
-      line-height: 147%;
+      font-size: 14px;
+      line-height: 178%;
     }
 
     .warranty__list-item {
-      font-size: 16px;
-      line-height: 163%;
+      font-size: 14px;
+      line-height: 178%;
     }
 
     .warranty__bottom-block {
-      font-size: 19px;
+      font-size: 16px;
       padding-left: 52px;
-      max-width: 242px;
+      max-width: 240px;
+      line-height: 156%;
     }
 
     .warranty__bottom-block-bg {
@@ -982,7 +1062,7 @@
     }
 
     .warranty__list {
-      margin-bottom: -6px;
+      margin-bottom: 7px;
     }
 
     .warranty__section {

@@ -10,7 +10,7 @@
 
   .sidebar__subtitle {
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 130%;
     color: $dark-gray;
     margin-bottom: 20px;
@@ -90,6 +90,7 @@
     line-height: 22px;
     color: $gray-color;
     margin-bottom: 12px;
+    max-width: 200px;
   }
 
   .sidebar__block-bottom {

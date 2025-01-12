@@ -2,7 +2,7 @@
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 420px);
+    grid-template-rows: repeat(3, minmax(420px, auto));
     grid-auto-rows: 420px;
     margin-bottom: 32px;
   }

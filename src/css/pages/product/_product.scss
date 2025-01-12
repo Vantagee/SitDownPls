@@ -33,7 +33,6 @@
     line-height: 180%;
     color: $dark-gray;
     margin-bottom: 105px;
-    letter-spacing: 1px;
   }
 
   .product__rating-wrapper {
@@ -54,15 +53,15 @@
 
   .product__subtitle {
     font-weight: 400;
-    font-size: 27px;
+    font-size: 24px;
     line-height: 130%;
     color: $dark-gray;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
   }
 
   .product__descr-right {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 100%;
     color: $gray-color;
     letter-spacing: 1px;
@@ -71,21 +70,20 @@
 
   .product__price {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 130%;
     color: $dark-gray;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
   }
 
   .product__btn {
-    padding: 17px 30px;
+    padding: 17px 20px;
     width: 230px;
     height: 54px;
     background: $purple-color;
     font-weight: 600;
     color: $white-color;
     margin-bottom: 12px;
-    letter-spacing: 1px;
   }
 
   .product__right {
@@ -99,7 +97,6 @@
     color: #A65CF0;
     width: 228px;
     height: 21px;
-    letter-spacing: 1px;
   }
 
   .product__item-text {
